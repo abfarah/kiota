@@ -14,9 +14,10 @@ name: "CodeQL"
 on:
   push:
     branches: [ main ]
+    path-ignore: ['abstractions/**', '**.md', '.vscode/**', '**.svg']
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main ]
+    path-ignore: ['abstractions/**', '**.md', '.vscode/**', '**.svg']
   schedule:
     - cron: '20 9 * * 5'
 
@@ -35,7 +36,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.3.4
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
