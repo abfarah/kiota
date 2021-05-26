@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adds input parameters validation #168
 - Expands code coverage to 88% #147
 - Removes json assumption for request body to support multiple formats #170
+- Replaces custom URL tree node by class provided by OpenAPI.net #179
 
 ## [0.0.4] - 2021-04-28
 
